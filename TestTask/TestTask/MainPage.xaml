@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestTask.MainPage"
+             Title="Main Page"
+             >
+        <StackLayout
+            Orientation="Vertical">
+            <Grid>
+                <Label HorizontalOptions="Start" Text="Максимальная длина слова"/>
+                <Label HorizontalOptions="End" Text="Максимальная длина текста в символах"/>
+            </Grid>
+            <Grid>
+                <Editor x:Name="Word_Length" Placeholder="Максимальная длина слова" HorizontalOptions="Start" TextChanged="Set_WordLength" />
+                <Editor x:Name="Text_Length" Placeholder="Максимальная длина текста в символах" HorizontalOptions="End" TextChanged="Set_TextLength" />
+            </Grid>
+            <Grid HorizontalOptions="Start">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Button Grid.Row="0" Text="Download Key-words" Clicked="Key_wordClicked" FontSize="24" />
+                <Button Grid.Row="1" Text="Download Prefixes"  Clicked="Prefixes_Clicked" FontSize="24" />
+                <Button Grid.Row="2" Text="Download Text"  Clicked="Text_Clicked" FontSize="24" />
+                <Label Grid.Row="0" Grid.Column="1" x:Name="KeyWordLabel" />
+                <Label Grid.Row="1" Grid.Column="1" x:Name="PrefixLabel" />
+                <Label Grid.Row="2" Grid.Column="1" x:Name="TextLabel" />
+            </Grid>
+            <Button  Text="Make Analize"  Clicked="Text_AnalizeClicked" FontSize="24" />
+            
+            <Grid 
+                 HorizontalOptions="Start" 
+                 Padding="10"> 
+                 <Grid.RowDefinitions> 
+                     <RowDefinition /> 
+                     <RowDefinition /> 
+                     <RowDefinition /> 
+                     <RowDefinition /> 
+                     <RowDefinition /> 
+                     <RowDefinition /> 
+                     <RowDefinition /> 
+                     <RowDefinition /> 
+                 </Grid.RowDefinitions> 
+                 <Label Grid.Row="0" Text="Исходный текст" /> 
+                 <Label VerticalOptions="StartAndExpand" LineBreakMode="WordWrap" HorizontalOptions="StartAndExpand" Grid.Row="1" x:Name="Final_Main_Text" /> 
+                 <Label Grid.Row="2" Text="Исправленный текст"/> 
+                 <Label VerticalOptions="Fill" LineBreakMode="WordWrap" HorizontalOptions="Fill"  Grid.Row="3" x:Name="Edited_Text"/> 
+                 <Label Grid.Row="4" Text="Ключевые слова" /> 
+                 <Label VerticalOptions="Fill" LineBreakMode="WordWrap" HorizontalOptions="Fill"  Grid.Row="5" x:Name="Key_Words" /> 
+                 <Label Grid.Row="6" Text="Префиксы" /> 
+                 <Label VerticalOptions="Fill" LineBreakMode="WordWrap" HorizontalOptions="Fill" Grid.Row="7" x:Name="Prefixes" /> 
+             </Grid> 
+            <Button  x:Name="About_Button" Text="About Page" Clicked="About_Button_OnClicked" VerticalOptions="End" /> 
+            
+            
+        </StackLayout>
+    
+    
+
+</ContentPage>

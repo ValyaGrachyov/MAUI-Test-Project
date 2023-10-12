@@ -1,0 +1,10 @@
+﻿  ConsoleApplication1.cpp
+C:\Users\User\Desktop\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(9,34): warning C4474: 'printf' : too many arguments passed for format string
+C:\Users\User\Desktop\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(9,34): message : placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+C:\Users\User\Desktop\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(13,27): warning C4474: 'printf' : too many arguments passed for format string
+C:\Users\User\Desktop\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(13,27): message : placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+C:\Users\User\Desktop\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(16,23): warning C4474: 'printf' : too many arguments passed for format string
+C:\Users\User\Desktop\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(16,23): message : placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+C:\Users\User\Desktop\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(18,29): warning C4474: 'printf' : too many arguments passed for format string
+C:\Users\User\Desktop\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(18,29): message : placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+  ConsoleApplication1.vcxproj -> C:\Users\User\Desktop\ConsoleApplication1\x64\Debug\ConsoleApplication1.exe
